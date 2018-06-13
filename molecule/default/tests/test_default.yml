@@ -1,0 +1,24 @@
+---
+package:
+  pmm-server:
+    installed: true
+port:
+  tcp:80:
+    listening: true
+    ip:
+      - 0.0.0.0
+service:
+  pmm-server:
+    enabled: true
+    running: true
+user:
+  pmm-server:
+    exists: true
+    groups:
+      - pmm-server
+group:
+  pmm-server:
+    exists: true
+process:
+  pmm-server:
+    running: true
