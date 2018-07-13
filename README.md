@@ -7,22 +7,32 @@ Ansible Role: pmm-server
 Installs pmm-server on Ubuntu 16.04 (Xenial)
 
 ## Requirements
-
 This role requires Ansible 2.4 or higher.
+### Pakage
+ - pip
+ - docker
 
-## Role Variables
-
-The role defines most of its variables in `defaults/main.yml`:
+## Role just testo for
+chrissam.pmm-server
 
 ## Example Playbook
 
-Run with default vars:
-
-    - hosts: all
-      roles:
-        - { role: ansible-pmm-server }
+- name: run the main role
+  hosts: all
+  roles:
+  - role: entercloudsuite.pmm-server
+    pmm_server_ENABLE_SSL: false
+    pmm_client_PROTECTED: true
+    pmm_server_version: 1.11.0
+    pmm_server_username: pmm-administrator
+    pmm_server_password: verys3cre3t
+    pmm_client_http_port: 80
+    pmm_client_https_port: 443
 
 ## Testing
+
+## You nead pmm client
+
 
 Tests are performed using [Molecule](http://molecule.readthedocs.org/en/latest/).
 

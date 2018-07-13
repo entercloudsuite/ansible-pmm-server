@@ -13,6 +13,5 @@ galaxy_info:
     - molecule
 
 dependencies:
-  - {role: galaxy.pmm-server, version: 1.1.1}
-  # List your role dependencies here, one per line.
-
+  - { role: geerlingguy.docker, docker_install_compose: False}
+  - { role: chrissam.pmm-server}
