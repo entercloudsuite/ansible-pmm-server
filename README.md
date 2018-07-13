@@ -17,6 +17,7 @@ chrissam.pmm-server
 
 ## Example Playbook
 
+```yaml
 - name: run the main role
   hosts: all
   roles:
@@ -28,7 +29,7 @@ chrissam.pmm-server
     pmm_server_password: verys3cre3t
     pmm_client_http_port: 80
     pmm_client_https_port: 443
-
+```
 ## Testing
 
 ## You nead pmm client
