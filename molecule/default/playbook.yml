@@ -3,12 +3,12 @@
 - name: run the main role
   hosts: all
   roles:
-  - role: chrissam.pmm-server
-    ansible_test: true
-    pmm_server_ENABLE_SSL: false
-    pmm_client_PROTECTED: true
-    pmm_server_version: 1.11.0
-    pmm_server_username: pmm-administrator
-    pmm_server_password: verys3cre3t
-    pmm_client_http_port: 80
-    pmm_client_https_port: 443
+    - role: chrissam.pmm-server
+      ansible_test: true
+      pmm_server_ENABLE_SSL: false
+      pmm_client_PROTECTED: true
+      pmm_server_version: 1.13.0
+      pmm_server_username: pmm-administrator
+      pmm_server_password: verys3cre3t
+      pmm_client_http_port: 80
+      pmm_client_https_port: 443

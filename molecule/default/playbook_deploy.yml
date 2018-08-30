@@ -6,4 +6,5 @@
   become_user: root
   hosts: all
   roles:
-    - {role: ansible-pmm-server}
+    - role: ansible-pmm-server
+      pmm_server_version: 1.11.0
