@@ -14,4 +14,4 @@ galaxy_info:
 
 dependencies:
   - { role: geerlingguy.docker, docker_install_compose: False}
-  - { role: chrissam.pmm-server}
+  - { role: chrissam.pmm-server, version: 1.0.0 }
