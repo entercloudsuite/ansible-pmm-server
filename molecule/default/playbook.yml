@@ -3,7 +3,7 @@
 - name: run the main role
   hosts: all
   roles:
-    - role: chrissam.pmm-server
+    - role: ansible-pmm-server
       ansible_test: true
       pmm_server_ENABLE_SSL: false
       pmm_client_PROTECTED: true
