@@ -21,7 +21,7 @@ notifications:
 # TODO: this should run once
 before_deploy:
   - pip install ansible==2.6.2
-  - ansible-galaxy install --force --roles-path . -r ./molecule/default/requirements.yml
+  - ansible-galaxy install --force -r ./molecule/default/requirements.yml
   - wget -O packer.zip https://releases.hashicorp.com/packer/1.1.3/packer_1.1.3_linux_amd64.zip
   - unzip -o packer.zip
 
