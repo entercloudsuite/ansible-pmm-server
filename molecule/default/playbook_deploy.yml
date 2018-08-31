@@ -7,4 +7,4 @@
   hosts: all
   roles:
     - role: ansible-pmm-server
-      pmm_server_version: 1.11.0
+      pmm_server_version: 1.13.0
