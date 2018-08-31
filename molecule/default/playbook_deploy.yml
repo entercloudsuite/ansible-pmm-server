@@ -5,6 +5,8 @@
   become_method: sudo
   become_user: root
   hosts: all
+  pre_tasks:
+    - package: name=python-pip
   roles:
     - role: ansible-pmm-server
       pmm_server_version: 1.13.0
