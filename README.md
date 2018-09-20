@@ -2,7 +2,7 @@ Ansible Role: pmm-server
 ======================================
 
 [![Build Status](https://travis-ci.org/entercloudsuite/ansible-pmm-server.svg?branch=master)](https://travis-ci.org/entercloudsuite/ansible-pmm-server)
-[![Galaxy](https://img.shields.io/badge/galaxy-entercloudsuite.pmm-server-blue.svg?style=flat-square)](https://galaxy.ansible.com/entercloudsuite/pmm-server)  
+[![Galaxy](https://img.shields.io/badge/galaxy-entercloudsuite.pmm_server-blue.svg?style=flat-square)](https://galaxy.ansible.com/entercloudsuite/pmm_server)  
 
 Installs pmm-server on Ubuntu 16.04 (Xenial)
 
@@ -21,7 +21,7 @@ chrissam.pmm-server
 - name: run the main role
   hosts: all
   roles:
-  - role: entercloudsuite.pmm-server
+  - role: entercloudsuite.pmm_server
     pmm_server_ENABLE_SSL: false
     pmm_client_PROTECTED: true
     pmm_server_version: 1.11.0
