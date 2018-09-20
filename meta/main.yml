@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: pmm-server
   author: Attilio Greco
   description: Playbook for pmm-server.
   company: Enter srl
@@ -11,7 +12,6 @@ galaxy_info:
         - xenial
   galaxy_tags:
     - molecule
-
 dependencies:
   - { role: geerlingguy.docker, docker_install_compose: False }
   - { role: chrissam.pmm-server, version: 1.0.0 }
