@@ -21,14 +21,16 @@ chrissam.pmm-server
 - name: run the main role
   hosts: all
   roles:
-  - role: entercloudsuite.pmm_server
-    pmm_server_ENABLE_SSL: false
-    pmm_client_PROTECTED: true
-    pmm_server_version: 1.11.0
-    pmm_server_username: pmm-administrator
-    pmm_server_password: verys3cre3t
-    pmm_client_http_port: 80
-    pmm_client_https_port: 443
+    - role: entercloudsuite.pmm_server
+      pmm_server_ENABLE_SSL: false
+      pmm_client_PROTECTED: true
+      pmm_server_version: 1.15.0
+      pmm_server_username: pmm-administrator
+      pmm_server_password: verys3cre3t
+      pmm_client_http_port: 80
+      pmm_client_https_port: 443
+      pmm_server_env_custom:
+        METRICS_RETENTION: 72h
 ```
 ## Testing
 
